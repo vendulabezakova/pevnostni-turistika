@@ -1,0 +1,40 @@
+h1, h2, h3 {
+  color: #5e503f;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 20px;
+}
+
+nav li {
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #5e503f;
+  color: #dedbe0;
+  font-size: 25px;
+}
+
+.logo img {
+  width: 150px;
+  padding: 30px;
+}
+
+.logo-social {
+  width: 50px;
+  color: #dedbe0;
+}/*# sourceMappingURL=style.css.map */
