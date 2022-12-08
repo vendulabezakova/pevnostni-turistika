@@ -1,44 +1,18 @@
-$color-primary: #5e503f;
-$color-secondary: #dedbe0;
-$button-primary: #fbb13c;
+@use "colors";
+
+@use "nav";
+
+
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+
 
 h1, h2, h3 {
-    color: $color-primary;
+    color: colors.$color-primary;
 }
 
 body {
     font-family: 'Ubuntu', sans-serif;
     margin: 0;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    display: flex;
-    justify-content: flex-end;
-    padding: 20px 20px;
-}
-
-nav li {
     padding: 0 30px;
-    display: flex;
-    align-items: center;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    background-color: $color-primary;
-    color: $color-secondary;
-    font-size: 25px;
-}
-
-.logo img {
-    width: 150px;
-    padding: 30px;
-}
-
-.logo-social {
-    width: 50px;
-    color: $color-secondary;
 }
