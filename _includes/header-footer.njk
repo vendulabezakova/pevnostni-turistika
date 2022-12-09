@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,31 +10,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
-
-
 </head>
+
 <body>
     <header>
-        <nav>
+            <nav class="menu">
             <div class="logo"><img src="images/pevnostni-turistika-logo-light.png"></div>
-            <ul>
-                <li>Muzea opevnění</li>
-                <li>Články</li>
-                <li>Kontakt</li>
-                <li><img  class="logo-social" src="images/icons8-facebook-100.svg"></li>
-                <li><img  class="logo-social" src="images/icons8-instagram-100.svg"></li>
-            </ul>
-        </nav>
+                <input type="checkbox" class="menu__checkbox" id="menu-checkbox">
+                <label for="menu-checkbox" class="menu__toggler">☰ Menu</label>
+                <ul class="menu__list">
+                    <li class="menu__item"><a class="menu__link" href="/muzea-opevneni/">Muzea opevnění</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Články</a></li>
+                    <li class="menu__item"><a class="menu__link" href="/kontakt">Kontakt</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#"><img  class="logo-social" src="images/icons8-facebook-100.svg"></a></li>
+                    <li class="menu__item"><a class="menu__link" href="#"><img  class="logo-social" src="images/icons8-instagram-100.svg"></a></li>
+                </ul>
+            </nav>
     </header>
 
-
-        <main>
+    <main>
         {{ content | safe }}
-        </main>
+    </main>
 
+    <footer>
+        <p>© Vendula Bezáková | Pevnostní turistika | 2022</p>
+     </footer>
 
-        <footer>
-            <p>© Vendula Bezáková | Pevnostní turistika | 2022</p>
-        </footer>
 </body>
+
 </html>

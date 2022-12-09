@@ -1,33 +1,73 @@
-nav ul {
+@charset "UTF-8";
+.logo img {
+  display: none;
+}
+
+.menu__checkbox {
+  /* Odsune prvek pryč ze stránky */
+  position: absolute;
+  left: -9999px;
+}
+
+.menu__list {
   list-style-type: none;
   margin: 0;
-  display: flex;
-  justify-content: flex-end;
   padding: 20px 20px;
+  display: none;
 }
 
-nav li {
-  padding: 0 30px;
-  display: flex;
-  align-items: center;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
+.menu {
   background-color: #5e503f;
-  color: #dedbe0;
   font-size: 25px;
-}
-
-.logo img {
-  width: 150px;
+  color: #dedbe0;
   padding: 30px;
 }
 
 .logo-social {
-  width: 50px;
+  width: 35px;
   color: #dedbe0;
+}
+
+.menu__item {
+  border-bottom: 1px solid #dedbe0;
+  padding: 10px;
+  margin: 0;
+}
+
+.menu__item a {
+  text-decoration: none;
+  color: #dedbe0;
+  display: block;
+}
+
+.menu__item:hover {
+  background-color: #4e4130;
+}
+
+.menu__checkbox:checked ~ .menu__list {
+  display: block;
+}
+
+@media screen and (min-width: 800px) {
+  .menu__list {
+    display: flex;
+  }
+  .menu__item {
+    border-bottom: 0;
+  }
+  .menu__toggler {
+    display: none;
+  }
+  .logo img {
+    width: 35px;
+  }
+  .menu {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+footer {
+  padding: 30px 120px;
 }
 
 html {
@@ -45,5 +85,8 @@ h1, h2, h3 {
 body {
   font-family: "Ubuntu", sans-serif;
   margin: 0;
-  padding: 0 30px;
+}
+
+main {
+  padding: 30px 120px;
 }/*# sourceMappingURL=style.css.map */
