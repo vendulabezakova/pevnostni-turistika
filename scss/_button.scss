@@ -1,0 +1,9 @@
+@use "colors";
+
+.button__submit, button {
+    background-color: colors.$color-primary;
+    color: white;
+    margin: 20px 0;
+    padding: 10px 20px;
+    border-radius: 6px;
+}

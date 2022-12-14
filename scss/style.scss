@@ -1,21 +1,30 @@
 @use "colors";
 @use "nav";
 @use "footer";
+@use "button";
+@use "typo";
 
 
-html { box-sizing: border-box; }
-*, ::before, ::after { box-sizing: inherit; }
 
-
-h1, h2, h3 {
-    color: colors.$color-primary;
-}
 
 body {
     font-family: 'Ubuntu', sans-serif;
     margin: 0;
 }
 
+
 main {
-    padding: 30px 120px;
+    padding: 30px 60px;
+}
+
+@media screen and (min-width: 800px) {
+    main {
+        padding: 30px 120px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    main {
+        padding: 30px 120px;
+    }
 }
