@@ -1,7 +1,8 @@
 @use "colors";
 
 .logo img {
-   display: none;
+    height: 30px;
+    display: flex;
 }
 
 .menu__checkbox {
@@ -15,13 +16,16 @@
     margin: 0;
     padding: 20px 20px;
     display: none;
+    text-align: center;
 }
 
 .menu {
     background-color: colors.$color-primary;
-    font-size: 25px;
+    font-size: 21px;
     color: colors.$color-secondary;
-    padding: 30px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .logo-social {
@@ -31,7 +35,7 @@
 
 .menu__item {
     border-bottom: 1px solid colors.$color-secondary;
-    padding: 10px;
+    padding: 10px 20px;
     margin: 0;
 }
 
@@ -49,6 +53,11 @@
     display: block;
 }
 
+.menu__toggler {
+    display: block;
+    text-align: right;
+}
+
 @media screen and (min-width: 800px) {
 
     .menu__list {
@@ -64,7 +73,8 @@
     }
 
     .logo img {
-        width: 35px;
+        height: 90px;
+        padding: 0 30px;
      }
 
      .menu {
