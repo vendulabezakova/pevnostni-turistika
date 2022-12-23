@@ -1,54 +1,87 @@
-@charset "UTF-8";
-nav li {
-  list-style-type: none;
+@media screen and (max-width: 799px) {
+  .logo {
+    display: none;
+  }
+  header ul {
+    list-style-type: none;
+    margin: 0;
+    display: block;
+  }
+  header li {
+    padding: 10px 30px;
+    font-size: 21px;
+  }
+  header li a {
+    text-decoration: none;
+    color: #212427;
+  }
+  span {
+    padding: 20px;
+    background: #414833;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+  }
+  span::after {
+    float: right;
+    right: 10%;
+    content: "+";
+  }
+  .dropdown {
+    clear: both;
+    height: 0px;
+    overflow: hidden;
+    text-align: center;
+    transition: height 0.4s ease;
+  }
+  span, #touch {
+    visibility: visible;
+  }
+  .dropdown li {
+    padding: 10px;
+  }
+  #touch {
+    position: absolute;
+    opacity: 0;
+    height: 0px;
+  }
+  #touch:checked + .dropdown {
+    height: 300px;
+  }
 }
-
-nav a {
-  text-decoration: none;
-  color: #212427;
+@media screen and (min-width: 800px) {
+  .logo {
+    width: 150px;
+    padding-bottom: 10px;
+  }
+  header {
+    top: 0%;
+    width: 100%;
+    background-color: transparent;
+  }
+  header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header li {
+    padding: 10px 40px;
+    font-size: 24px;
+  }
+  header li a {
+    text-decoration: none;
+    color: #212427;
+  }
+  /*hidden mobile menu on desktop*/
+  span, #touch {
+    visibility: hidden;
+  }
 }
-
-span {
-  padding: 20px;
-  background: #5e503f;
-  color: white;
-  font-size: 1.2em;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-around;
-}
-
-span::after {
-  content: "☰";
-}
-
-.dropdown {
-  clear: both;
-  width: 100%;
-  height: 0px;
-  overflow: hidden;
-  text-align: center;
-  transition: height ease;
-}
-
-span, #touch {
-  visibility: visible;
-}
-
-.dropdown li {
-  padding: 10px;
-}
-
-#touch {
-  position: absolute;
-  opacity: 0;
-  height: 0px;
-}
-
-#touch:checked + .dropdown {
-  height: 100%;
-}
-
 footer {
   padding: 10px 60px;
   background-color: #5e503f;
@@ -79,6 +112,7 @@ a.button__submit, a.button {
   border-radius: 6px;
   color: white;
   margin: auto;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 a.button:active, a.button__submit:active {
@@ -97,14 +131,6 @@ a.button:hover, a.button__submit:hover {
     font-size: 24px;
   }
 }
-html {
-  box-sizing: border-box;
-}
-
-*, ::before, ::after {
-  box-sizing: inherit;
-}
-
 h1, h2, h3 {
   color: #5e503f;
 }
@@ -124,8 +150,8 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
   margin: 0;
+  padding-top: 120px;
 }
 
 .hero-text h1 {
