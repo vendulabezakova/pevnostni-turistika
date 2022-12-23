@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }}</title>
+    <title>Pevnostní turistika | Moravskoslezský kraj</title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,10 +30,25 @@
     </header>
 
     <main>
-        {{ content | safe }}
+        <div class="mapa">
+    <iframe style="border:none" src="https://frame.mapy.cz/s/mosudocute" width="100%" height="500" frameborder="0"></iframe>
+</div>
 
     <section>
-        {% include "form.html" %}
+        
+<h2>Napište mi</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem esse earum blanditiis commodi voluptas itaque a assumenda vero, porro eos ad quos est, quas iusto iure ipsam rem temporibus magnam.</p>
+    <form action="/">
+        <label for="name">Jméno a příjmení</label><br>
+        <input type="text" id="name" name="name" placeholder="Jméno a příjmení"><br>
+        <label for="email" placeholder="Jméno a příjmení">E-mail</label><br>
+        <input type="text" id="email" name="email" placeholder="E-mail"><br>
+        <label for="message">Zpráva</label><br>
+        <input type="text" id="message" name="message" placeholder="Vaše zpráva"><br><br><br>
+        <a class="button__submit" href ="#">Odeslat</a>
+    </form>
+
+
 
     </section>
 

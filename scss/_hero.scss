@@ -1,0 +1,25 @@
+.hero-image {
+    background-image: url("/images/pechnotni-srub-brezinka-praseci-ocasky.jpg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: 0;
+}
+
+.hero-text h1 {
+    text-align: center;
+    color: white;
+    text-shadow: #000 1px 0 6px;
+    font-size: 40px;
+  }
+
+  @media screen and (min-width: 800px) {
+    .hero-image {
+        height: 500px;
+    }
+    .hero-text h1 {
+        font-size: 64px;
+    }
+}
