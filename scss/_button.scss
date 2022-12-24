@@ -26,10 +26,18 @@ a.button__submit, a.button {
     color: white;
   }
 
+
+  label {
+    margin-bottom: -160px;
+    font-weight: 700;
+  }
+
+
   @media screen and (min-width: 800px) {
     a.button__submit, a.button {
-      padding: 25px 50px;
-      font-size: 24px;
+      padding: 22 px 50px;
+      font-size: 21px;
     }
+
 }
 

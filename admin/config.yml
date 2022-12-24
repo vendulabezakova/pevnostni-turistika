@@ -1,0 +1,17 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: "images/uploads"
+collections:
+  - name: "clanky"
+    label: "Články"
+    folder: "clanky"
+    create: true # Uživatel může přidávat nové stránky/příspěvky (nebo false, pokud nemůže)
+    slug: "{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "hlavni"}
+      - {label: "Tags", name: "tags", widget: "hidden", default: "clanky"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publikováno", name: "date", widget: "datetime"}
+      - {label: "Featured Image", name: "thumbnail", widget: "image", required: false }
+      - {label: "Body", name: "body", widget: "markdown"}

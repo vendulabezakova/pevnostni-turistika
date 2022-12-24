@@ -4,6 +4,8 @@ eleventyConfig.addPassthroughCopy("images");
 
 eleventyConfig.addPassthroughCopy("css");
 
+eleventyConfig.addPassthroughCopy("admin");
+
 
 return {
     templateFormats: ["njk", "html", "md"],
