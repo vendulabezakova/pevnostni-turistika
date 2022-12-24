@@ -17,7 +17,7 @@
   }
   span {
     padding: 20px;
-    background: #414833;
+    background: #5e503f;
     color: white;
     font-size: 1.2em;
     cursor: pointer;
@@ -55,6 +55,7 @@
   .logo {
     width: 150px;
     padding-bottom: 10px;
+    padding-right: 170px;
   }
   header {
     top: 0%;
@@ -86,6 +87,7 @@ footer {
   padding: 10px 60px;
   background-color: #5e503f;
   color: white;
+  font-size: 12px;
 }
 
 @media screen and (min-width: 800px) {
@@ -142,6 +144,7 @@ h1 {
 body {
   background-color: #D8D4CE;
   color: #212427;
+  line-height: 1.5;
 }
 
 .hero-image {
@@ -169,6 +172,29 @@ body {
     font-size: 64px;
   }
 }
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  transition: 0.5s;
+  outline: none;
+}
+
+input[type=text]:focus {
+  border: 3px solid #555;
+}
+
+@media screen and (min-width: 800px) {
+  .form__contact {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .form__description {
+    padding-right: 60px;
+  }
+}
 body {
   font-family: "Ubuntu", sans-serif;
   margin: 0;
@@ -176,7 +202,7 @@ body {
 }
 
 section {
-  padding: 30px 60px;
+  padding: 60px 80px;
 }
 
 @media screen and (min-width: 800px) {

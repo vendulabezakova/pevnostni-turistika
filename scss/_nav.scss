@@ -24,7 +24,7 @@
 
     span {
       padding: 20px;
-      background : #414833; 
+      background : colors.$color-primary; 
       color : white;
       font-size : 1.2em;
       cursor : pointer;
@@ -68,6 +68,7 @@
 .logo {
     width: 150px;
     padding-bottom: 10px;
+    padding-right: 170px;
 }
 
   header {

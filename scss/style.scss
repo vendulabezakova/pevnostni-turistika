@@ -4,6 +4,7 @@
 @use "button";
 @use "typo";
 @use "hero";
+@use "form";
 
 
 
@@ -16,7 +17,7 @@ body {
 
 
 section {
-    padding: 30px 60px;
+    padding: 60px 80px;
 }
 
 
@@ -24,6 +25,7 @@ section {
     h1 {
         font-size: 1.2rem;
     }
+
 }
 
 @media screen and (min-width: 1200px) {
