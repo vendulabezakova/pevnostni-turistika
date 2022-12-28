@@ -12,7 +12,7 @@ collections:
     create: true # Uživatel může přidávat nové stránky/příspěvky (nebo false, pokud nemůže)
     slug: "{{slug}}"
     fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "hlavni"}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/articles.njk"}
       - {label: "Tags", name: "tags", widget: "hidden", default: "clanky"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publikováno", name: "date", widget: "datetime"}
