@@ -16,6 +16,6 @@ collections:
       - {label: "Tags", name: "tags", widget: "hidden", default: "clanky"}
       - {label: "Název", name: "title", widget: "string"}
       - {label: "Publikováno", name: "date", widget: "datetime"}
-      - {perex: "Perex", name: "perex", widget: "perex"}
+      - {perex: "Perex", name: "perex", widget: "string"}
       - {label: "Náhledový obrázek", name: "thumbnail", widget: "image", required: false }
       - {label: "Obsah", name: "body", widget: "markdown"}
