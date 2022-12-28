@@ -197,7 +197,7 @@ input[type=text]:focus {
     grid-template-columns: 2fr 1fr;
   }
   .form__description {
-    padding-right: 60px;
+    padding-right: 120px;
   }
 }
 body {

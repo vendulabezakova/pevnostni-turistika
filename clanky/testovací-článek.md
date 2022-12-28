@@ -1,5 +1,5 @@
 ---
-layout: hlavni
+layout: layouts/articles.njk
 tags: clanky
 title: Testovací článek
 date: 2022-12-28T10:30:33.277Z
