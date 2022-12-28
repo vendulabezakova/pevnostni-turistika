@@ -1,0 +1,35 @@
+
+.museums {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+    row-gap: 60px;
+  }
+  
+  .museum {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  }
+  
+  .museum p {
+    padding: 20px;
+  }
+  
+  .museum h3 {
+    text-align: center;
+  }
+
+  .museum img {
+    width: inherit;
+  }
+  
+  @media screen and (min-width: 800px) {
+      
+  .museum {
+    width: 500px;
+  }
+
+}

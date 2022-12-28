@@ -66,7 +66,7 @@
 @media screen and (min-width: 800px) {
 
 .logo {
-    width: 150px;
+    width: 130px;
     padding-bottom: 10px;
     padding-right: 170px;
 }
@@ -74,7 +74,8 @@
   header {
     top:0%;
     width: 100%;
-    background-color: transparent;
+    background-color: colors.$color-background;
+    position: fixed;
   }
   
   header ul {

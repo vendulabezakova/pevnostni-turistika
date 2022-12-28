@@ -6,16 +6,17 @@ title: Pevnostní turistika
         <section class="hero-image">
             <div class="hero-text">
                 <h1>Pevnostní turistika</h1>
-                <a href="#" class="button">Najít muzeum</a>
+                <a href="/muzea-opevneni" class="button">Najít muzeum</a>
             </div>
         </section>
-
+        <section>
+        <h2 style="text-align: center;">Články</h2>
+    </section>
         
         {% for prispevek in collections.clanky | reverse %}
-        {% if loop.index0 < 4 %}
+        {% if loop.index0 < 3 %}
         
         <section class="article-overview">
-            <h2>Články</h2>
             <div class="section-inner">
                 
                     <div class="article-cards">
