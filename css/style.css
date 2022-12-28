@@ -149,6 +149,15 @@ h1 {
   font-size: 34px;
 }
 
+h3 {
+  font-size: 25px;
+}
+
+a {
+  text-decoration: none;
+  color: #5e503f;
+}
+
 body {
   background-color: #D8D4CE;
   color: #212427;
@@ -285,22 +294,22 @@ input[type=text]:focus {
 .museums {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  flex-direction: row;
-  row-gap: 60px;
+  flex-direction: column;
+  row-gap: 20px;
 }
 
 .museum {
   background-color: white;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 100%;
 }
 
 .museum p {
   padding: 20px;
 }
 
-.museum h3 {
+.museum h2 {
   text-align: center;
 }
 
@@ -309,6 +318,13 @@ input[type=text]:focus {
 }
 
 @media screen and (min-width: 800px) {
+  .museums {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+    row-gap: 60px;
+  }
   .museum {
     width: 500px;
   }
@@ -317,9 +333,17 @@ body {
   font-family: "Ubuntu", sans-serif;
   margin: 0;
   font-size: 16px;
-  padding-top: 100px;
 }
 
 section {
-  padding: 60px 80px;
+  padding: 30px 40px;
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    padding-top: 100px;
+  }
+  section {
+    padding: 60px 80px;
+  }
 }/*# sourceMappingURL=style.css.map */

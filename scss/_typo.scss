@@ -11,10 +11,14 @@ h1 {
     font-size: 34px;
 }
 
-h2 {
-
+h3 {
+    font-size: 25px;
 }
 
+a {
+    text-decoration: none;
+    color: colors.$color-primary;
+}
 
 body {
     background-color: colors.$color-background;

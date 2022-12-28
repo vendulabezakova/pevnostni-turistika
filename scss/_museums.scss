@@ -2,23 +2,23 @@
 .museums {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    flex-direction: row;
-    row-gap: 60px;
-  }
-  
+    flex-direction: column;
+    row-gap: 20px;
+}
+
   .museum {
     background-color: white;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-
+    width: 100%;
   }
-  
+
+
   .museum p {
     padding: 20px;
   }
   
-  .museum h3 {
+  .museum h2 {
     text-align: center;
   }
 
@@ -27,6 +27,14 @@
   }
   
   @media screen and (min-width: 800px) {
+
+    .museums {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        flex-direction: row;
+        row-gap: 60px;
+      }
       
   .museum {
     width: 500px;
