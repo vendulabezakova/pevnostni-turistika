@@ -7,6 +7,7 @@ perex: Na 18. května připadá Mezinárodní den muzeí, kdy se otevřou dveře
   muzeí, ale i galerií a fortů. Ale co pevnostní muzea? Letos proběhne už 6.
   ročník Dne pevnostních muzeí jižní Moravy ‒ společné akce, do které se
   zapojují některá pevnostní muzea.
+thumbnail: /images/uploads/ropik-vrbno-pod-pradedem-karlov-2020.jpg
 ---
 
 
