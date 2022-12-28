@@ -60,7 +60,7 @@
         height: 0px;
     }    
     #touch:checked + .dropdown {
-        height: 300px;} 
+        height: 350px;} 
     }
 
 @media screen and (min-width: 800px) {
@@ -88,12 +88,13 @@
   
   header li {
     padding: 10px 40px;
-    font-size: 24px;
+    font-size: 18px;
   }
   
   header li a {
     text-decoration: none;
     color: colors.$color-paragraph;
+    font-size: 18px;
   }
   
   /*hidden mobile menu on desktop*/

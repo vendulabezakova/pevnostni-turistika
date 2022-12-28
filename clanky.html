@@ -1,0 +1,19 @@
+---
+layout: layouts/articles.njk
+title: Články
+---
+
+<h1>Články</h1>
+
+{% for prispevek in collections.clanky | reverse %}
+
+	<article class="clanek">
+
+		<h2>{{ prispevek.data.title }}</h2>
+		<p>{{ prispevek.data.perex }}</p>
+        <img>{{ prispevek.data.thumbnail }}</img>
+		<p><a href="{{ prispevek.url }}">Přečíst článek</a></p>
+
+	</article>
+
+{% endfor %}

@@ -14,7 +14,8 @@ collections:
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/articles.njk"}
       - {label: "Tags", name: "tags", widget: "hidden", default: "clanky"}
-      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Název", name: "title", widget: "string"}
       - {label: "Publikováno", name: "date", widget: "datetime"}
-      - {label: "Featured Image", name: "thumbnail", widget: "image", required: false }
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {perex: "Perex", name: "perex", widget: "perex"}
+      - {label: "Náhledový obrázek", name: "thumbnail", widget: "image", required: false }
+      - {label: "Obsah", name: "body", widget: "markdown"}
