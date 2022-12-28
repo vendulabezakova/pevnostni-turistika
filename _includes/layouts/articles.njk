@@ -1,49 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }}</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-</head>
-
-<body>
-    <header>
-        {% include "partials/header.njk" %}
-    </header>
-
-    <main>
-        {{ content | safe }}
-
-    <section>
-        {% include "partials/form.njk" %}
-
-    </section>
-
-    </main>
-    <footer>
-        {% include "partials/footer.njk" %}
-    </footer>
+---
+layout: layouts/main-template.njk
+---
 
 
-<script>
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", user => {
-      if (!user) {
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/admin/";
-        });
-      }
-    });
-  }
-</script>
 
-</body>
+<main class="main">
 
-</html>
+	<article class="article">
+
+		<h1>{{ title }}</h1>
+
+		<p class="article__meta">Publikováno {{ page.date.toLocaleString('cs-CZ') }}</p>
+
+		<div class="article__content">
+
+			<p class="article__perex">{{ perex }}</p>
+
+      <img class="thumbnail" src="{{ thumbnail }}"></img>
+
+			{{ content | safe }}
+
+		</div>
+
+		<a href="/clanky/" class="button">Zpět na všechny články</a>
+	</article>
+
+</main>

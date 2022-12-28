@@ -10,7 +10,28 @@ title: Pevnostní turistika
             </div>
         </section>
 
-        <section class="articles__news">
+        
+        {% for prispevek in collections.clanky | reverse %}
+        {% if loop.index0 < 4 %}
+        
+        <section class="article-overview">
             <h2>Články</h2>
+            <div class="section-inner">
+                
+                    <div class="article-cards">
+                        <div class="card">
+                            
+                            <h2>{{ prispevek.data.title }}</h2>
+                            <p class="article__meta">{{ page.date.toLocaleString('cs-CZ') }}</p>
+                            <p>{{ prispevek.data.perex }}</p>
+        
+                            <p><a class="button" href="{{ prispevek.url }}">Přečíst článek</a></p>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        {% endif%}
+        {% endfor %}
+        <section style="text-align: center">
             <a href="/clanky" class="button">Všechny články</a>
         </section>

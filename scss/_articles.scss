@@ -25,7 +25,19 @@
     margin: 0;
   }
 
+  .article {
+    padding: 60px 80px;;
+  }
 
+  .article__meta {
+    font-size: 12px;
+  }
+
+  .thumbnail {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
 
   @media screen and (min-width: 800px) {
     .card {
@@ -37,8 +49,13 @@
     .article-overview {
         padding: 50px 30px;
     }
-  }
 
+    .thumbnail {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+  }
+  }
 
   /*
   .card p {

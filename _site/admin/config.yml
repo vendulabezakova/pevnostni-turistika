@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
   branch: main
-media_folder: "images/uploads"
+media_folder: "/images/uploads"
 slug:
   encoding: "ascii"
   clean_accents: true
@@ -12,7 +12,7 @@ collections:
     create: true # Uživatel může přidávat nové stránky/příspěvky (nebo false, pokud nemůže)
     slug: "{{slug}}"
     fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/articles.njk"}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/main-template.njk"}
       - {label: "Tags", name: "tags", widget: "hidden", default: "clanky"}
       - {label: "Název", name: "title", widget: "string"}
       - {label: "Publikováno", name: "date", widget: "datetime"}

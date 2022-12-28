@@ -11,12 +11,12 @@ title: Články
     <div class="section-inner">
         
             <div class="article-cards">
-                
 	            <div class="card">
                     
                     <h2>{{ prispevek.data.title }}</h2>
+                    <p class="article__meta">{{ page.date.toLocaleString('cs-CZ') }}</p>
                     <p>{{ prispevek.data.perex }}</p>
-                    <img class="thumbnail">{{ prispevek.data.thumbnail }}</img>
+
                     <p><a class="button" href="{{ prispevek.url }}">Přečíst článek</a></p>
                 </div>
             </div>
