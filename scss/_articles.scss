@@ -1,6 +1,62 @@
 @use "typo";
 @use "colors";
+@use "button";
 
-.articles__cards {
+
+
+.article-cards {
     display: flex;
+    justify-content: center;
 }
+
+.article-overview {
+    padding: 20px 30px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 30px;
+    width: 100%;
+  }
+
+  .card h2 {
+    margin: 0;
+  }
+
+
+
+  @media screen and (min-width: 800px) {
+    .card {
+        max-width: 1100px;
+        padding: 30px 50px;
+        margin: 0px 30px;
+    }
+
+    .article-overview {
+        padding: 50px 30px;
+    }
+  }
+
+
+  /*
+  .card p {
+    padding: 20px;
+  }
+
+  
+  .card h2 {
+    text-align: center;
+  }
+  
+  .section-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .article-overview {
+    display: flex;
+    flex-direction: row;
+  }*/
+

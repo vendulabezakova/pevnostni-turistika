@@ -8,10 +8,19 @@ h1, h2, h3 {
 
 h1 {
     text-align: center;
+    font-size: 34px;
 }
+
 
 body {
     background-color: colors.$color-background;
     color: colors.$color-paragraph;
     line-height: 1.5;
+}
+
+@media screen and (min-width: 800px) {
+    h1 {
+        font-size: 64px;
+    }
+
 }
