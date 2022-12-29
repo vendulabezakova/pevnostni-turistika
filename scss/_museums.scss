@@ -25,6 +25,10 @@
   width: inherit;
 }
 
+
+
+
+
 @media screen and (min-width: 800px) {
 
   .museums {
@@ -46,4 +50,10 @@
     display: grid;
     justify-items: center;
   }
+
+  .museum h2 {
+    font-size: 24px;
+  }
+
+  
 }

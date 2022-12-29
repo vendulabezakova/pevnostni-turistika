@@ -1,0 +1,20 @@
+---
+layout: layouts/main-template.njk
+---
+
+
+
+<main class="main">
+<section>
+	<article class="article">
+		<h1>{{ title }}</h1>
+		<div class="article__content">
+      <img class="thumbnail" src="{{ thumbnail }}"></img>
+
+			{{ content | safe }}
+
+		</div>
+
+	</article>
+</section>
+</main>

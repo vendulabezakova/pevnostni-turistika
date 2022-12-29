@@ -21,6 +21,7 @@ input[type=text] {
         display: grid;
         grid-template-columns: 2fr 1fr;
         max-width: 1200px;
+        padding-top: 80px;
     }
 
     .form__description {

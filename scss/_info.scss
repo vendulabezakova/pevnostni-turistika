@@ -1,0 +1,29 @@
+@use "colors";
+
+.info {
+    background-color: colors.$color-secondary;
+    padding: 20px 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 6px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.info__image img {
+    width: 100%;
+    object-fit: fill;
+}
+
+.info p {
+    padding: 0;
+}
+
+@media screen and (min-width: 800px) {
+    .info {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        margin-top: 80px;
+    }
+  
+  }
