@@ -85,7 +85,7 @@ body {
     height: 0px;
   }
   #touch:checked + .dropdown {
-    height: 380px;
+    height: 420px;
   }
 }
 @media screen and (min-width: 800px) {
