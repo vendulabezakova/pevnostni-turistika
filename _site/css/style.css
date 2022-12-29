@@ -1,3 +1,35 @@
+h1, h2, h3 {
+  color: #5e503f;
+}
+
+h1 {
+  text-align: center;
+  font-size: 34px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+a {
+  text-decoration: none;
+  color: #5e503f;
+}
+
+body {
+  background-color: #D8D4CE;
+  color: #212427;
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 64px;
+  }
+  h2 {
+    font-size: 34px;
+  }
+}
 @media screen and (max-width: 799px) {
   .logo {
     display: none;
@@ -48,7 +80,7 @@
     height: 0px;
   }
   #touch:checked + .dropdown {
-    height: 350px;
+    height: 380px;
   }
 }
 @media screen and (min-width: 800px) {
@@ -102,6 +134,31 @@ footer {
     padding: 10px 120px;
   }
 }
+.hero-image {
+  background-image: url("/images/pechnotni-srub-brezinka-praseci-ocasky.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding-top: 120px;
+}
+
+.hero-text h1 {
+  text-align: center;
+  color: white;
+  text-shadow: #000 1px 0 6px;
+  font-size: 40px;
+}
+
+@media screen and (min-width: 800px) {
+  .hero-image {
+    height: 500px;
+  }
+  .hero-text h1 {
+    font-size: 64px;
+  }
+}
 form, .hero-text {
   display: grid;
 }
@@ -140,63 +197,40 @@ label {
     font-size: 21px;
   }
 }
-h1, h2, h3 {
-  color: #5e503f;
+.quote {
+  display: inline-block;
+  margin: 1em;
+  overflow: hidden;
 }
-
-h1 {
-  text-align: center;
-  font-size: 34px;
-}
-
-h3 {
-  font-size: 25px;
-}
-
-a {
-  text-decoration: none;
-  color: #5e503f;
-}
-
-body {
-  background-color: #D8D4CE;
-  color: #212427;
-  line-height: 1.5;
-}
-
-@media screen and (min-width: 800px) {
-  h1 {
-    font-size: 64px;
-  }
-  h2 {
-    font-size: 34px;
-  }
-}
-.hero-image {
-  background-image: url("/images/pechnotni-srub-brezinka-praseci-ocasky.jpg");
-  height: 50%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.quote blockquote {
+  border: solid 2px #757575;
+  display: inline-block;
   margin: 0;
-  padding-top: 120px;
+  padding: 1em;
+  position: relative;
+}
+.quote blockquote:before {
+  bottom: -10%;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: -10%;
+  transform: rotate(-15deg) skew(5deg);
+}
+.quote blockquote cite {
+  display: block;
+  font-style: italic;
+  text-align: right;
+}
+.quote blockquote cite:before {
+  content: "- ";
+}
+.quote blockquote > * {
+  position: relative;
+  z-index: 1;
 }
 
-.hero-text h1 {
-  text-align: center;
-  color: white;
-  text-shadow: #000 1px 0 6px;
-  font-size: 40px;
-}
-
-@media screen and (min-width: 800px) {
-  .hero-image {
-    height: 500px;
-  }
-  .hero-text h1 {
-    font-size: 64px;
-  }
-}
 input[type=text] {
   width: 100%;
   padding: 12px 20px;
@@ -242,7 +276,7 @@ input[type=text]:focus {
 }
 
 .article {
-  padding: 60px 80px;
+  padding: 60px 50px;
 }
 
 .article__meta {
@@ -270,6 +304,9 @@ input[type=text]:focus {
     height: 500px;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .article {
+    max-width: 1200px;
   }
 }
 /*
@@ -324,9 +361,15 @@ input[type=text]:focus {
     justify-content: space-around;
     flex-direction: row;
     row-gap: 60px;
+    max-width: 1200px;
+    padding-top: 50px;
   }
   .museum {
-    width: 500px;
+    width: 380px;
+  }
+  .museums-list {
+    display: grid;
+    justify-items: center;
   }
 }
 body {
@@ -345,5 +388,9 @@ section {
   }
   section {
     padding: 60px 80px;
+  }
+  .main {
+    display: grid;
+    justify-items: center;
   }
 }/*# sourceMappingURL=style.css.map */

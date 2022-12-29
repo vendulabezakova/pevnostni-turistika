@@ -1,10 +1,14 @@
 @use "colors";
+@use "typo";
+
 @use "nav";
 @use "footer";
-@use "button";
-@use "typo";
 @use "hero";
+
+@use "button";
+@use "quote";
 @use "form";
+
 @use "articles";
 @use "museums";
 
@@ -14,7 +18,10 @@ body {
     font-family: 'Ubuntu', sans-serif;
     margin: 0;
     font-size: 16px;
+
 }
+
+
 
 
 section {
@@ -30,5 +37,10 @@ section {
     section {
         padding: 60px 80px;
     }
+
+    .main {
+        display: grid;
+        justify-items: center;
+      }
   
   }

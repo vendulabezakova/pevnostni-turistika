@@ -21,5 +21,8 @@
   "homepage": "https://github.com/vendulabezakova/pevnostni-turistika#readme",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.2"
+  },
+  "dependencies": {
+    "eleventy-plugin-read-more": "^1.0.2"
   }
 }

@@ -1,6 +1,7 @@
 @use "typo";
 @use "colors";
 @use "button";
+@use "quote";
 
 
 
@@ -26,7 +27,7 @@
   }
 
   .article {
-    padding: 60px 80px;;
+    padding: 60px 50px;;
   }
 
   .article__meta {
@@ -55,6 +56,12 @@
       height: 500px;
       object-fit: cover;
   }
+    .article {
+      max-width: 1200px;
+  
+
+    }
+
   }
 
   /*
