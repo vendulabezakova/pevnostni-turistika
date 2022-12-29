@@ -5,6 +5,7 @@ h1, h2, h3 {
 h1 {
   text-align: center;
   font-size: 34px;
+  padding: 10px 20px;
 }
 
 h3 {
@@ -249,6 +250,7 @@ input[type=text]:focus {
   .form__contact {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    max-width: 1200px;
   }
   .form__description {
     padding-right: 120px;
@@ -276,7 +278,7 @@ input[type=text]:focus {
 }
 
 .article {
-  padding: 60px 50px;
+  padding: 20px 20px;
 }
 
 .article__meta {
@@ -348,6 +350,7 @@ input[type=text]:focus {
 
 .museum h2 {
   text-align: center;
+  padding: 5px 10px;
 }
 
 .museum img {
@@ -358,9 +361,11 @@ input[type=text]:focus {
   .museums {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     flex-direction: row;
-    row-gap: 60px;
+    row-gap: 20px;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
     max-width: 1200px;
     padding-top: 50px;
   }
@@ -372,6 +377,10 @@ input[type=text]:focus {
     justify-items: center;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Ubuntu", sans-serif;
   margin: 0;
@@ -380,6 +389,8 @@ body {
 
 section {
   padding: 30px 40px;
+  justify-items: center;
+  display: grid;
 }
 
 @media screen and (min-width: 800px) {
@@ -387,7 +398,7 @@ section {
     padding-top: 100px;
   }
   section {
-    padding: 60px 80px;
+    padding: 30px 80px;
   }
   .main {
     display: grid;

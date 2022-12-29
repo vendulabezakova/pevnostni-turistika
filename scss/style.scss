@@ -12,13 +12,14 @@
 @use "articles";
 @use "museums";
 
-
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: 'Ubuntu', sans-serif;
     margin: 0;
     font-size: 16px;
-
 }
 
 
@@ -26,6 +27,8 @@ body {
 
 section {
     padding: 30px 40px;
+    justify-items: center;
+    display: grid;
 }
 
 @media screen and (min-width: 800px) {
@@ -35,7 +38,7 @@ section {
     }
     
     section {
-        padding: 60px 80px;
+        padding: 30px 80px;
     }
 
     .main {

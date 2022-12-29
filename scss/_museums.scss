@@ -1,43 +1,43 @@
-
 .museums {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    row-gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  row-gap: 20px;
 }
 
-  .museum {
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    width: 100%;
+.museum {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 100%;
+}
+
+.museum p {
+  padding: 20px;
+}
+
+.museum h2 {
+  text-align: center;
+  padding: 5px 10px;
+}
+
+.museum img {
+  width: inherit;
+}
+
+@media screen and (min-width: 800px) {
+
+  .museums {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    row-gap: 20px;
+    column-gap: 20px;
+    max-width: 1200px;
+    padding-top: 50px
   }
 
-
-  .museum p {
-    padding: 20px;
-  }
-  
-  .museum h2 {
-    text-align: center;
-  }
-
-  .museum img {
-    width: inherit;
-  }
-  
-  @media screen and (min-width: 800px) {
-
-    .museums {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        flex-direction: row;
-        row-gap: 60px;
-        max-width: 1200px;
-        padding-top: 50px
-      }
-      
   .museum {
     width: 380px;
   }
