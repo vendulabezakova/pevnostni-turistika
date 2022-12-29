@@ -94,6 +94,9 @@ body {
     padding-bottom: 10px;
     padding-right: 170px;
   }
+  .home {
+    display: none;
+  }
   header {
     top: 0%;
     width: 100%;
