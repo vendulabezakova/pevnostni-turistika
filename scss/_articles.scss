@@ -24,6 +24,7 @@
 
   .card h2 {
     margin: 0;
+    padding: 10px 0;
   }
 
   .article {
@@ -58,6 +59,10 @@
   }
     .article {
       max-width: 1200px;
+    }
+
+    .card h2 {
+      padding: 10px 0;
     }
 
   }
